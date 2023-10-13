@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Notas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Notas</h1>
+        <div>
+            <label for="nombre">Nombre del Alumno:</label>
+            <input type="text" id="nombre">
+            <label for="apellido">Apellido del Alumno:</label>
+            <input type="text" id="apellido">
+        </div>
+        <div class="notas">
+            <label for="cuatrimestre1">Nota Cuatrimestre 1:</label>
+            <input type="number" id="cuatrimestre1" min="0" max="10">
+            <label for="cuatrimestre2">Nota Cuatrimestre 2:</label>
+            <input type="number" id="cuatrimestre2" min="0" max="10">
+            <label for="cuatrimestre3">Nota Cuatrimestre 3:</label>
+            <input type="number" id="cuatrimestre3" min="0" max="10">
+        </div>
+        <button onclick="calcularPromedio()">Calcular Promedio</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="js/estilo.js"></script>
+</body>
+</html>
